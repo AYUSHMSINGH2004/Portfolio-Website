@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | Portfolio Home</title>
+    <meta name="description" content="Professional portfolio of Ayush, showcasing skills and professional summary.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4cc9f0" />
+                        <stop offset="100%" stop-color="#7b2cbf" />
+                    </linearGradient>
+                </defs>
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span class="logo-text" style="letter-spacing: 2px;">AMS.</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Internships & Trainings</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="page-title fade-in" style="animation-delay: 0.1s;">Hi, I'm Ayush M Singh</h1>
+                <p class="fade-in"
+                    style="animation-delay: 0.2s; line-height: 1.8; text-align: justify; margin-bottom: 2rem; color: var(--text-secondary);">
+                    Results-driven final-year Computer Science student (Data Science Specialization, CGPA: 8.4) specializing in transforming raw data into actionable insights that drive strategic decision-making. With a proven track record across three ML/Data Science internships, I've evolved from mastering data engineering fundamentals to architecting scalable AI solutions—culminating in a VIT-level hackathon victory as an AI/ML Lead.<br><br>I have built and shipped 12+ end-to-end AI systems spanning deep learning, computer vision, generative AI, and NLP, including a 99.84%-accuracy deepfake voice detection platform. Combining strong DSA fundamentals with expertise in Python, TensorFlow, and modern cloud architectures (GCP, Docker, Hugging Face), I am actively seeking Data Science and AI/ML roles to deliver impactful, production-ready applications.
+                </p>
+                <div class="fade-in" style="animation-delay: 0.3s; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="btn btn-outline">Contact Me</a>
+                    <a href="assets/resume.pdf" target="_blank" class="btn btn-outline" style="display: inline-flex; align-items: center; gap: 6px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Resume
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image fade-in" style="animation-delay: 0.2s;">
+                <img src="assets/ayush_photo.jpg" alt="Ayush M Singh">
+            </div>
+        </section>
+
+        <!-- NEW FULL-WIDTH SKILLS SECTION -->
+        <section class="skills-section" style="margin-top: 5rem; margin-bottom: 5rem;">
+            <h2 class="page-title fade-in" style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem;">Technical
+                Expertise</h2>
+
+            <div class="technical-expertise-wrapper"
+                style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+
+                <!-- Languages -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        Languages</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-blue">Python</span></span>
+                        <span class="shield-badge"><span class="shield-val val-blue">Java</span></span>
+                        <span class="shield-badge"><span class="shield-val val-blue">R</span></span>
+                        <span class="shield-badge"><span class="shield-val val-blue">C/C++</span></span>
+                        <span class="shield-badge"><span class="shield-val val-blue">SQL</span></span>
+                    </div>
+                </div>
+
+                <!-- ML / DL -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        ML / Deep Learning</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-orange">TensorFlow</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">Keras</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">PyTorch</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">Scikit-learn</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">LightGBM</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">XGBoost</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">CNN</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">YOLOv8</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">Grad-CAM</span></span>
+                        <span class="shield-badge"><span class="shield-val val-orange">Transfer Learning</span></span>
+                    </div>
+                </div>
+
+                <!-- GenAI -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        Generative AI & LLMs</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-purple">Gemini</span></span>
+                        <span class="shield-badge"><span class="shield-val val-purple">GPT</span></span>
+                        <span class="shield-badge"><span class="shield-val val-purple">Claude</span></span>
+                        <span class="shield-badge"><span class="shield-val val-purple">Prompt Engineering</span></span>
+                        <span class="shield-badge"><span class="shield-val val-purple">RAG</span></span>
+                    </div>
+                </div>
+
+                <!-- Full-Stack & APIs -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        Full-Stack & APIs</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-teal">HTML</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">CSS</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">JavaScript</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">FastAPI</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">React</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">Streamlit</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">REST APIs</span></span>
+                        <span class="shield-badge"><span class="shield-val val-teal">WebSockets</span></span>
+                    </div>
+                </div>
+
+                <!-- Cloud & Deployment -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        Cloud & Deployment</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-red">GCP / Cloud Run</span></span>
+                        <span class="shield-badge"><span class="shield-val val-red">Docker</span></span>
+                        <span class="shield-badge"><span class="shield-val val-red">Render</span></span>
+                        <span class="shield-badge"><span class="shield-val val-red">Netlify</span></span>
+                        <span class="shield-badge"><span class="shield-val val-red">HF Spaces</span></span>
+                        <span class="shield-badge"><span class="shield-val val-red">Cloudflare Pages</span></span>
+                        <span class="shield-badge"><span class="shield-val val-red">Firebase</span></span>
+                    </div>
+                </div>
+
+                <!-- Data & Databases -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        Data & Databases</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-green">Pandas</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">NumPy</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">Matplotlib</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">Seaborn</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">PostgreSQL</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">MySQL</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">Power BI</span></span>
+                        <span class="shield-badge"><span class="shield-val val-green">Excel</span></span>
+                    </div>
+                </div>
+
+                <!-- AI Dev -->
+                <div class="skills-category fade-in">
+                    <h3
+                        style="color: var(--accent-3); margin-bottom: 1rem; font-size: 1.1rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">
+                        AI-Assisted Development</h3>
+                    <div class="badges-container" style="justify-content: flex-start; gap: 8px; margin-bottom: 0;">
+                        <span class="shield-badge"><span class="shield-val val-dark">Vibe-coding</span></span>
+                        <span class="shield-badge"><span class="shield-val val-dark">Hostinger Horizons</span></span>
+                        <span class="shield-badge"><span class="shield-val val-dark">Antigravity IDE</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer
+        style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--text-secondary); padding-bottom: 2rem;">
+        <h3 style="color: var(--text-primary); margin-bottom: 1rem; letter-spacing: 1px;">AYUSH M SINGH</h3>
+        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Agra, Uttar Pradesh &nbsp;|&nbsp; <a
+                href="mailto:ayushmsingh2004@gmail.com"
+                style="color: var(--primary-color); text-decoration: none;">ayushmsingh2004@gmail.com</a></p>
+        <div
+            style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; font-size: 0.95rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/ayush-m-singh-31b403370" target="_blank"
+                style="color: var(--text-secondary); text-decoration: none;"
+                onmouseover="this.style.color='var(--primary-color)'"
+                onmouseout="this.style.color='var(--text-secondary)'">LinkedIn 🔗</a>
+            <a href="https://github.com/AYUSHMSINGH2004" target="_blank"
+                style="color: var(--text-secondary); text-decoration: none;"
+                onmouseover="this.style.color='var(--primary-color)'"
+                onmouseout="this.style.color='var(--text-secondary)'">GitHub 🔗</a>
+            <a href="https://leetcode.com/u/AYUSHMSINGH2004/" target="_blank"
+                style="color: var(--text-secondary); text-decoration: none;"
+                onmouseover="this.style.color='var(--primary-color)'"
+                onmouseout="this.style.color='var(--text-secondary)'">LeetCode 🔗</a>
+            <a href="https://www.hackerrank.com/profile/ayushmsingh2004" target="_blank"
+                style="color: var(--text-secondary); text-decoration: none;"
+                onmouseover="this.style.color='var(--primary-color)'"
+                onmouseout="this.style.color='var(--text-secondary)'">HackerRank 🔗</a>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal" onclick="if(event.target === this) closeContactModal()">
+        <div class="modal-content contact-modal-content">
+            <span class="close-modal" onclick="closeContactModal()">&times;</span>
+            <h3 style="color: var(--accent-3); margin-bottom: 1.5rem; font-size: 1.5rem;">Contact Information</h3>
+            <div style="text-align: left; line-height: 1.8;">
+                <p><strong style="color: var(--text-secondary);">Name:</strong> Ayush M Singh</p>
+                <p><strong style="color: var(--text-secondary);">Location:</strong> Agra, Uttar Pradesh</p>
+                <p><strong style="color: var(--text-secondary);">Email:</strong> <a
+                        href="mailto:ayushmsingh2004@gmail.com"
+                        style="color: var(--accent-3); text-decoration: none;">ayushmsingh2004@gmail.com</a></p>
+
+                <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-start;">
+                    <a href="https://www.linkedin.com/in/ayush-m-singh-31b403370" target="_blank"
+                        class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">LinkedIn</a>
+                    <a href="https://www.instagram.com/ams.2004.star/" target="_blank" class="btn btn-outline"
+                        style="padding: 0.5rem 1rem; font-size: 0.9rem;">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Shared Contact Modal Styles */
+        #contactModal.modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #contactModal.modal.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .contact-modal-content {
+            background: var(--bg-color);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #contactModal.modal.show .contact-modal-content {
+            transform: scale(1);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: var(--text-secondary);
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-modal:hover {
+            color: var(--accent-1);
+        }
+    </style>
+
+    <script>
+        function openContactModal() {
+            document.getElementById('contactModal').classList.add('show');
+        }
+        function closeContactModal() {
+            document.getElementById('contactModal').classList.remove('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | Certifications</title>
+    <meta name="description" content="Certifications obtained by Ayush.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4cc9f0" />
+                        <stop offset="100%" stop-color="#7b2cbf" />
+                    </linearGradient>
+                </defs>
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span class="logo-text" style="letter-spacing: 2px;">AMS.</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Internships & Trainings</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title fade-in">Certifications</h1>
+        <p class="fade-in" style="color: var(--text-secondary); margin-bottom: 3rem;">
+            A collection of professional certifications and courses I have completed.
+        </p>
+
+
+
+        <!-- Google Subsection -->
+        <section style="margin-bottom: 4rem;">
+            <h2 class="fade-in" style="font-size: 2rem; margin-bottom: 2rem; color: var(--accent-3); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Google</h2>
+            <div class="grid-container">
+                <!-- Inspect Rich Documents with Gemini Multimodality and Multimodal RAG -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Inspect Rich Documents with Gemini Multimodality and Multimodal RAG</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Skill Badge • Intermediate</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/gemini-badge.png')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Prompt Design in Vertex AI -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Prompt Design in Vertex AI</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Skill Badge • Introductory</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/prompt-design-badge.png')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Modal -->
+        <div id="certModal" class="modal" onclick="if(event.target === this) closeModal()">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="certImage">
+            <iframe class="modal-content" id="certPdf" style="display: none; width: 80vw; height: 85vh; border: none; background: white;"></iframe>
+        </div>
+
+        <style>
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 2000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(8px);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .modal.show {
+                display: flex;
+                opacity: 1;
+                justify-content: center;
+                align-items: center;
+            }
+            .modal-content {
+                max-width: 90%;
+                max-height: 90vh;
+                border-radius: 12px;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+                border: 1px solid var(--glass-border);
+            }
+            .close-modal {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                color: #fff;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color 0.3s;
+                z-index: 2001;
+            }
+            .close-modal:hover {
+                color: var(--accent-3);
+            }
+        </style>
+
+        <script>
+            function openModal(fileSrc, type = 'image') {
+                const modal = document.getElementById('certModal');
+                const img = document.getElementById('certImage');
+                const pdf = document.getElementById('certPdf');
+                
+                if (type === 'pdf') {
+                    img.style.display = 'none';
+                    pdf.style.display = 'block';
+                    pdf.src = fileSrc;
+                } else {
+                    pdf.style.display = 'none';
+                    img.style.display = 'block';
+                    img.src = fileSrc;
+                }
+                modal.classList.add('show');
+            }
+            
+            function closeModal() {
+                const modal = document.getElementById('certModal');
+                modal.classList.remove('show');
+                document.getElementById('certPdf').src = ''; // clear iframe
+            }
+        </script>
+
+        <!-- Hackerrank Subsection -->
+        <section style="margin-bottom: 4rem;">
+            <h2 class="fade-in" style="font-size: 2rem; margin-bottom: 2rem; color: var(--accent-3); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Hackerrank</h2>
+            <div class="grid-container">
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">SQL (Basic)</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 20 Jun, 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/hackerrank-sql-basic.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IBM SkillsBuild Subsection -->
+        <section style="margin-bottom: 4rem;">
+            <h2 class="fade-in" style="font-size: 2rem; margin-bottom: 2rem; color: var(--accent-3); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">IBM SkillsBuild</h2>
+            <div class="grid-container">
+                <!-- AI Ethics -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">AI Ethics</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 21 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-ai-ethics.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Earn it! Accept it! Share it! -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Earn it! Accept it! Share it!</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 16 Jun 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-earn-it.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Can AI help climate change? -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Can AI help climate change?</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 22 Jan 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-climate-change.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Everyday Ethics for Artificial Intelligence -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Everyday Ethics for Artificial Intelligence</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 09 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-everyday-ethics.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Getting Started with Artificial Intelligence -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Getting Started with Artificial Intelligence</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 17 Jun 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-getting-started.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Journey to Cloud: Envisioning Your Solution -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Journey to Cloud: Envisioning Your Solution</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 17 Jun 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-journey-to-cloud.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Introduction to Artificial Intelligence -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Introduction to Artificial Intelligence</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 09 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-intro-ai.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Machine Learning and Deep Learning -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Machine Learning and Deep Learning</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 09 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-ml-dl.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Natural Language Processing and Computer Vision -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Natural Language Processing and Computer Vision</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 21 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-nlp-cv.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Run AI Models with IBM Watson Studio -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Run AI Models with IBM Watson Studio</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 21 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-watson.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- What is prompt tuning? -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">What is prompt tuning?</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 09 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-prompt-tuning.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Your Future in AI: The Job Landscape -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Your Future in AI: The Job Landscape</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 21 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-ai-job-landscape.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Edunet-Artificial Intelligence -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Edunet-Artificial Intelligence</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 21 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/ibm-edunet-ai.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IIT Kanpur Subsection -->
+        <section style="margin-bottom: 4rem;">
+            <h2 class="fade-in" style="font-size: 2rem; margin-bottom: 2rem; color: var(--accent-3); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">IIT Kanpur</h2>
+            <div class="grid-container">
+                <!-- Forests and their Management -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Forests and their Management</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: Jan-Apr 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/nptel-forests.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oracle Subsection -->
+        <section style="margin-bottom: 4rem;">
+            <h2 class="fade-in" style="font-size: 2rem; margin-bottom: 2rem; color: var(--accent-3); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Oracle</h2>
+            <div class="grid-container">
+                <!-- Oracle Cloud Infrastructure 2025 Certified Foundations Associate -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 25 Nov 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/oracle-oci-foundations.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Oracle Data Platform 2025 Certified Foundations Associate -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Oracle Data Platform 2025 Certified Foundations Associate</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 27 Aug 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/oracle-data-platform.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 23 Feb 2026</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/oracle-oci-ai.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Udemy Subsection -->
+        <section style="margin-bottom: 4rem;">
+            <h2 class="fade-in" style="font-size: 2rem; margin-bottom: 2rem; color: var(--accent-3); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Udemy</h2>
+            <div class="grid-container">
+                <!-- The Complete Python Bootcamp From Zero to Hero in Python -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">The Complete Python Bootcamp From Zero to Hero in Python</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 13 Aug 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/udemy-python.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- The Complete SQL Bootcamp (30 Hours): Go from Zero to Hero -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">The Complete SQL Bootcamp (30 Hours): Go from Zero to Hero</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 02 Jul 2025</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/udemy-sql.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+
+                <!-- Learn C++ Programming - Beginner to Advance- Deep Dive in C++ -->
+                <div class="glass-card fade-in">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; line-height: 1.4;">Learn C++ Programming - Beginner to Advance- Deep Dive in C++</h3>
+                    <div class="item-meta" style="margin-bottom: 1.5rem;">Earned: 07 Jun 2024</div>
+                    <div class="card-actions">
+                        <button onclick="openModal('assets/udemy-cpp.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--text-secondary); padding-bottom: 2rem;">
+        <h3 style="color: var(--text-primary); margin-bottom: 1rem; letter-spacing: 1px;">AYUSH M SINGH</h3>
+        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Agra, Uttar Pradesh &nbsp;|&nbsp; <a href="mailto:ayushmsingh2004@gmail.com" style="color: var(--primary-color); text-decoration: none;">ayushmsingh2004@gmail.com</a></p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; font-size: 0.95rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/ayush-m-singh-31b403370" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">LinkedIn 🔗</a>
+            <a href="https://github.com/AYUSHMSINGH2004" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">GitHub 🔗</a>
+            <a href="https://leetcode.com/u/AYUSHMSINGH2004/" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">LeetCode 🔗</a>
+            <a href="https://www.hackerrank.com/profile/ayushmsingh2004" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">HackerRank 🔗</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

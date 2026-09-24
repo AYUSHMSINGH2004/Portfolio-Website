@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | Achievements</title>
+    <meta name="description" content="Hackathons, publications, and other achievements by Ayush.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4cc9f0" />
+                        <stop offset="100%" stop-color="#7b2cbf" />
+                    </linearGradient>
+                </defs>
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span class="logo-text" style="letter-spacing: 2px;">AMS.</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Internships & Trainings</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title fade-in">Achievements</h1>
+        <p class="fade-in" style="color: var(--text-secondary); margin-bottom: 3rem;">
+            Hackathons, Publications, and other milestones.
+        </p>
+
+        <div class="grid-container">
+            <!-- Build & Beyond Hackathon -->
+            <div class="glass-card fade-in">
+                <div class="item-meta">05 Apr 2026</div>
+                <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">1st Position - Build & Beyond Hackathon</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Secured 1st Position at the 36-hour hackathon hosted by The Whitehat's Club, VIT, Vellore as TEAM-ThunderBuddies.</p>
+                <div class="card-actions">
+                    <button onclick="openModal('assets/hackathon-build-beyond.png', 'image')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                </div>
+            </div>
+
+            <!-- Bharatiya Antariksh Hackathon -->
+            <div class="glass-card fade-in">
+                <div class="item-meta">2025</div>
+                <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Bharatiya Antariksh Hackathon</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Successfully submitted an idea for the Bharatiya Antariksh Hackathon 2025 (Powered by ISRO & Hack2skill), reflecting innovation in solving real-world space challenges.</p>
+                <div class="card-actions">
+                    <button onclick="openModal('assets/hackathon-bharatiya-antariksh.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Acknowledgement</button>
+                </div>
+            </div>
+
+            <!-- Publication -->
+            <div class="glass-card fade-in">
+                <div class="item-meta">30 Nov 2024</div>
+                <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Attitudes to Language in Different Societies</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Published in the International Journal of Progressive Research in Engineering Management and Science (IJPREMS), Vol 04, Issue 11.</p>
+                <div class="card-actions" style="display: flex; gap: 10px;">
+                    <button onclick="openModal('assets/publication-paper.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Paper</button>
+                    <button onclick="openModal('assets/publication-certificate-ayush.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Document Modal -->
+        <div id="certModal" class="modal" onclick="if(event.target === this) closeModal()">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="certImage">
+            <iframe class="modal-content" id="certPdf" style="display: none; width: 80vw; height: 85vh; border: none; background: white;"></iframe>
+        </div>
+
+        <style>
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 2000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(8px);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .modal.show {
+                display: flex;
+                opacity: 1;
+                justify-content: center;
+                align-items: center;
+            }
+            .modal-content {
+                max-width: 90%;
+                max-height: 90vh;
+                border-radius: 12px;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+                border: 1px solid var(--glass-border);
+            }
+            .close-modal {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                color: #fff;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color 0.3s;
+                z-index: 2001;
+            }
+            .close-modal:hover {
+                color: var(--accent-3);
+            }
+        </style>
+
+        <script>
+            function openModal(fileSrc, type = 'image') {
+                const modal = document.getElementById('certModal');
+                const img = document.getElementById('certImage');
+                const pdf = document.getElementById('certPdf');
+                
+                if (type === 'pdf') {
+                    img.style.display = 'none';
+                    pdf.style.display = 'block';
+                    pdf.src = fileSrc;
+                } else {
+                    pdf.style.display = 'none';
+                    img.style.display = 'block';
+                    img.src = fileSrc;
+                }
+                modal.classList.add('show');
+            }
+            
+            function closeModal() {
+                const modal = document.getElementById('certModal');
+                modal.classList.remove('show');
+                document.getElementById('certPdf').src = ''; // clear iframe
+            }
+        </script>
+    </main>
+
+    
+    <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--text-secondary); padding-bottom: 2rem;">
+        <h3 style="color: var(--text-primary); margin-bottom: 1rem; letter-spacing: 1px;">AYUSH M SINGH</h3>
+        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Agra, Uttar Pradesh &nbsp;|&nbsp; <a href="mailto:ayushmsingh2004@gmail.com" style="color: var(--primary-color); text-decoration: none;">ayushmsingh2004@gmail.com</a></p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; font-size: 0.95rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/ayush-m-singh-31b403370" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">LinkedIn 🔗</a>
+            <a href="https://github.com/AYUSHMSINGH2004" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">GitHub 🔗</a>
+            <a href="https://leetcode.com/u/AYUSHMSINGH2004/" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">LeetCode 🔗</a>
+            <a href="https://www.hackerrank.com/profile/ayushmsingh2004" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">HackerRank 🔗</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

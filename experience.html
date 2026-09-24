@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush | Internships & Trainings</title>
+    <meta name="description" content="Internships and Trainings completed by Ayush.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#4cc9f0" />
+                        <stop offset="100%" stop-color="#7b2cbf" />
+                    </linearGradient>
+                </defs>
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span class="logo-text" style="letter-spacing: 2px;">AMS.</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Internships & Trainings</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-title fade-in">Internships & Trainings</h1>
+        <p class="fade-in" style="color: var(--text-secondary); margin-bottom: 3rem;">
+            My professional experience, internships, and specialized training programs.
+        </p>
+
+        <div class="grid-container" style="display: flex; flex-direction: column; gap: 2rem;">
+            <!-- Pinnacle Labs Internship -->
+            <div class="glass-card fade-in">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <div class="item-meta">June 2, 2026 &ndash; July 2, 2026</div>
+                        <h3 style="margin-bottom: 0.2rem; font-size: 1.5rem;">Data Science Intern</h3>
+                        <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Pinnacle Labs Pvt. Ltd.</h4>
+                    </div>
+                    <div class="card-actions" style="margin-top: 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button onclick="openModal('assets/pinnacle-offer.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Offer Letter</button>
+                        <button onclick="openModal('assets/pinnacle-completion.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                        <a href="https://ayushmsingh2004-lane-detection-project.hf.space/" target="_blank" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Live Demo 🔗</a>
+                    </div>
+                </div>
+                
+                <ul style="color: var(--text-primary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                    <li>Built an AI-based Road Lane Detection system for ADAS/Autonomous Vehicles; evaluated classical OpenCV (Hough Transform) and CNN segmentation approaches before fine-tuning YOLOv8 Nano via transfer learning.</li>
+                    <li>Engineered an automated data preprocessing pipeline to convert Pascal VOC XML annotations to YOLO TXT format, enabling rapid deep learning experimentation.</li>
+                    <li>Evaluated model performance using Precision, Recall, mAP, and Confusion Matrices; deployed the finalized high-speed inference engine as an interactive Gradio web application on Hugging Face Spaces.</li>
+                </ul>
+            </div>
+            <!-- Data Science Internship -->
+            <div class="glass-card fade-in">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <div class="item-meta">10th May 2026 &ndash; 9th July 2026</div>
+                        <h3 style="margin-bottom: 0.2rem; font-size: 1.5rem;">Data Science Intern</h3>
+                        <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Skillified Mentor</h4>
+                    </div>
+                    <div class="card-actions" style="margin-top: 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button onclick="openModal('assets/skillfied-offer.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Offer Letter</button>
+                        <button onclick="openModal('assets/skillfied-exposure.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Orientation Certificate</button>
+                        <button onclick="openModal('assets/skillfied-internship.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                    </div>
+                </div>
+                
+                <ul style="color: var(--text-primary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                    <li>Actively engaged in an introductory Professional Career Development & Industry Orientation, gaining practical insights into corporate roles, real-world work culture, and career planning.</li>
+                    <li>Built a Logistic Regression fraud-detection model on 284,807 credit card transactions (99.92% accuracy, 83% precision) and a Linear Regression temperature-prediction model on 701,548 sensor records.</li>
+                    <li>Built an ARIMA time-series forecasting model with seasonal decomposition; applied the full EDA-to-evaluation ML lifecycle across all three projects using Python, Pandas, and Scikit-learn.</li>
+                </ul>
+            </div>
+
+            <!-- Edunet Foundation - AI & ML Internship -->
+            <div class="glass-card fade-in">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <div class="item-meta">15th January 2026 &ndash; 26th February 2026</div>
+                        <h3 style="margin-bottom: 0.2rem; font-size: 1.5rem;">AI/ML Intern</h3>
+                        <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Edunet Foundation &times; AICTE (IBM SkillsBuild)</h4>
+                    </div>
+                    <div class="card-actions" style="margin-top: 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button onclick="openModal('assets/edunet-offer.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Offer Letter</button>
+                        <button onclick="openModal('assets/edunet-completion.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">View Certificate</button>
+                        <a href="https://ai-meme-and-poster-creater-vdwoqjmywzfkn49iykywio.streamlit.app/" target="_blank" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Live Demo 🔗</a>
+                    </div>
+                </div>
+                
+                <ul style="color: var(--text-primary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                    <li>Built and deployed an AI Meme & Poster Creator (Streamlit + Pillow) with a Pandas-based pipeline that cleaned 212,422 raw entries down to 10,196 curated captions (~95% reduction).</li>
+                    <li>Integrated features including AI-generated event captions, custom font rendering, dynamic layout generation with local and web-sourced backgrounds, and PNG downloads.</li>
+                    <li>Completed 8+ IBM SkillsBuild certifications in AI, Machine Learning, Deep Learning, NLP, and Computer Vision.</li>
+                </ul>
+            </div>
+
+            <!-- Internshala Student Partner -->
+            <div class="glass-card fade-in">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <div class="item-meta">06th January 2026 &ndash; 13th February 2026</div>
+                        <h3 style="margin-bottom: 0.2rem; font-size: 1.5rem;">Internshala Student Partner (ISP)</h3>
+                        <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">Internshala</h4>
+                    </div>
+                    <div class="card-actions" style="margin-top: 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button onclick="openModal('assets/internshala-offer.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Offer Letter</button>
+                    </div>
+                </div>
+                
+                <ul style="color: var(--text-primary); margin-left: 1.5rem; margin-top: 1rem; line-height: 1.8;">
+                    <li>Motivated students to pursue online Internshala Trainings for upskilling and career development.</li>
+                    <li>Promoted Internshala campaigns in college to help students discover and secure dream internships and jobs.</li>
+                    <li>Participated in social media branding campaigns, developing effective online communication and marketing strategies.</li>
+                </ul>
+            </div>
+
+            <!-- SmartBridge - Artificial Intelligence Course -->
+            <div class="glass-card fade-in">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <div class="item-meta">19th May 2025 - 30th June 2025</div>
+                        <h3 style="margin-bottom: 0.2rem; font-size: 1.5rem;">Artificial Intelligence Credit Course</h3>
+                        <h4 style="color: var(--text-secondary); font-weight: 400; margin-bottom: 1rem;">SmartBridge in collaboration with Google for Developers</h4>
+                    </div>
+                    <div class="card-actions" style="margin-top: 0; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button onclick="openModal('assets/smartbridge-merit.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Certificate of Merit</button>
+                        <button onclick="openModal('assets/smartbridge-project.pdf', 'pdf')" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Project Certificate</button>
+                        <button onclick="openModal('assets/smartbridge-completion.pdf', 'pdf')" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Course Certificate</button>
+                        <a href="https://youtu.be/k71xUDj2Efo" target="_blank" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Watch Demo 🔗</a>
+                        <a href="https://early-disease-prediction-on-human-nails-fozv.onrender.com/" target="_blank" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem 1rem;">Live Demo 🔗</a>
+                    </div>
+                </div>
+                <ul class="task-list">
+                    <li>Successfully completed an intensive credit course on Artificial Intelligence, achieving an overall performance score of 96.2/100.</li>
+                    <li>Built a non-invasive healthcare solution for early disease detection analyzing nail images to predict conditions like anemia, jaundice, and fungal infections.</li>
+                    <li>Developed the frontend of a clean web interface using HTML and CSS, and integrated it with a Flask backend serving a VGG16-based deep learning model for real-time inference.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Certificate Modal -->
+        <div id="certModal" class="modal" onclick="if(event.target === this) closeModal()">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="certImage">
+            <iframe class="modal-content" id="certPdf" style="display: none; width: 80vw; height: 85vh; border: none; background: white;"></iframe>
+        </div>
+
+        <style>
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 2000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(8px);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .modal.show {
+                display: flex;
+                opacity: 1;
+                justify-content: center;
+                align-items: center;
+            }
+            .modal-content {
+                max-width: 90%;
+                max-height: 90vh;
+                border-radius: 12px;
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+                border: 1px solid var(--glass-border);
+            }
+            .close-modal {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                color: #fff;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color 0.3s;
+                z-index: 2001;
+            }
+            .close-modal:hover {
+                color: var(--accent-3);
+            }
+        </style>
+
+        <script>
+            function openModal(fileSrc, type = 'image') {
+                const modal = document.getElementById('certModal');
+                const img = document.getElementById('certImage');
+                const pdf = document.getElementById('certPdf');
+                
+                if (type === 'pdf') {
+                    img.style.display = 'none';
+                    pdf.style.display = 'block';
+                    pdf.src = fileSrc;
+                } else {
+                    pdf.style.display = 'none';
+                    img.style.display = 'block';
+                    img.src = fileSrc;
+                }
+                modal.classList.add('show');
+            }
+            
+            function closeModal() {
+                const modal = document.getElementById('certModal');
+                modal.classList.remove('show');
+                document.getElementById('certPdf').src = ''; // clear iframe
+            }
+        </script>
+    </main>
+
+    
+    <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--text-secondary); padding-bottom: 2rem;">
+        <h3 style="color: var(--text-primary); margin-bottom: 1rem; letter-spacing: 1px;">AYUSH M SINGH</h3>
+        <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Agra, Uttar Pradesh &nbsp;|&nbsp; <a href="mailto:ayushmsingh2004@gmail.com" style="color: var(--primary-color); text-decoration: none;">ayushmsingh2004@gmail.com</a></p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; font-size: 0.95rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/ayush-m-singh-31b403370" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">LinkedIn 🔗</a>
+            <a href="https://github.com/AYUSHMSINGH2004" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">GitHub 🔗</a>
+            <a href="https://leetcode.com/u/AYUSHMSINGH2004/" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">LeetCode 🔗</a>
+            <a href="https://www.hackerrank.com/profile/ayushmsingh2004" target="_blank" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-secondary)'">HackerRank 🔗</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
